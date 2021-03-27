@@ -1,10 +1,14 @@
 <div class="container">
     <div class="row">
         <div class="col-4 p-2">
-            <app-quote-form></app-quote-form>
+            <app-quote-form (newQuote)="getNewQuote($event)"></app-quote-form>
         </div>
         <div class="col-8 p-2">
-            <app-quote-display></app-quote-display>
+            <div class="row">
+                <div class="col-4" *ngFor="let quote of quotes">
+                    <app-quote-display [quote]="quote" (deleteQt)="handleDelete($event)"></app-quote-display>
+                </div>
+            </div>
         </div>
     </div>
 </div>
