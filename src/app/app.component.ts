@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quote } from './quote-form/quote-form.component';
+import { Quote } from './components/quote-form/quote-form.component';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,17 @@ import { Quote } from './quote-form/quote-form.component';
 })
 export class AppComponent {
   title = 'Quotes-app';
-  quotes: Quote[] = [];
+  quotes: Quote[] = [
+    {
+      id: 1,
+      date: new Date('12-03-2019'),
+      upvotes: 0,
+      downvotes: 2,
+      name: 'Jake Sully',
+      quote: 'Sometimes your whole life boils down to one insane move.',
+      author: 'James Cameron',
+    }
+  ];
 
   getNewQuote(e) {
     console.log(e);
