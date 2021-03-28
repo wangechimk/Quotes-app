@@ -29,7 +29,7 @@ export class AppComponent {
     },
     {
       id: 3,
-      date: new Date('15-09-2014'),
+      date: new Date('10-09-2014'),
       upvotes: 10,
       downvotes: 3,
       name: 'Amy',
@@ -38,7 +38,7 @@ export class AppComponent {
     },
     {
       id: 4,
-      date: new Date('15-09-2014'),
+      date: new Date('1-09-2014'),
       upvotes: 20,
       downvotes: 4,
       name: 'Beryl',
