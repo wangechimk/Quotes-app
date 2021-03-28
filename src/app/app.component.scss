@@ -1,0 +1,32 @@
+.card {
+    background: black;
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    color:whitesmoke;
+    font-size: 60px;
+    font-weight: 900;
+}
+.all-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    margin-bottom: 2%;
+    background-color: black;
+    box-shadow: 2px 2px 3px 2px black;
+  }
+  .overlay{
+    background-color:rgba(0, 225, 255, 0.301);
+    border-radius: 5px;
+    margin-top:4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 5%;
+  }

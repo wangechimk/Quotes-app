@@ -1,18 +1,26 @@
-
-<div class="container">
-  <div class="row">
-    <div class="col-4 p-2">
-      <app-quote-form (newQuote)="getNewQuote($event)"></app-quote-form>
-    </div>
-    <div class="col-4p-2">
-      <h3 [style.color]="'#fff'">Quotes</h3>
-      <div class="row">
-        <div class="col-4" *ngFor="let quote of quotes">
-          <app-quote-display [quote]="quote" (deleteQt)="handleDelete($event)"></app-quote-display>
+<div class="overlay">
+  <div class="container-fluid">
+    <h2 class="nav-brand text-center">ALL THE RIGHT WORDS</h2>
+    <hr>
+    <div class="row">
+      <div class="col-sm-3">
+        <app-quote-form (newQuote)="getNewQuote($event)"></app-quote-form>
+      </div>
+      <div class="col-sm-9">
+        <div class="all-cards">
+          <div *ngFor="let quote of quotes let i= index" class="card" style="width: 24rem;"  >
+            <h3 class="nav-brand text-center" [style.color]="'#fff'">Quotes</h3>
+            <div class="card-body">
+              
+                <app-quote-display [quote]="quote" (deleteQt)="handleDelete($event)"></app-quote-display>
+                
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <!-- <router-outlet></router-outlet> -->
