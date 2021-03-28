@@ -1,0 +1,26 @@
+<div class="quote-display">
+  <div class="row">
+    <div class="col-12">
+      <p class="quote-text">~{{quote?.quote}}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-3">
+      <p><i (click)="vote('up')" class="bi bi-hand-thumbs-up-fill"></i>{{quote?.upvotes}}</p>
+    </div>
+    <div class="col-3">
+      <p><i (click)="vote('down')" class="bi bi-hand-thumbs-down-fill"></i>{{quote?.downvotes}}</p>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-4">
+      <p><i (click)="deleteQuote(quote.id)" class="bi bi-trash-fill"></i></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <p>By: {{quote?.author}} &nbsp;&nbsp; <span class="date">{{quote?.date}}</span></p>
+    </div>
+  </div>
+</div>

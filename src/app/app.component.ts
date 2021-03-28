@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Quote } from './quote-form/quote-form.component';
+import { Quote } from './components/quote-form/quote-form.component';
 
 @Component({
   selector: 'app-root',

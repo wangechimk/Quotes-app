@@ -3,17 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuoteDisplayComponent } from './quote-display/quote-display.component';
+import { QuoteFormComponent } from './components/quote-form/quote-form.component';
+import { QuoteDisplayComponent } from './components/quote-display/quote-display.component';
 import { FormsModule } from '@angular/forms';
-import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteFormComponent,
-    QuoteDisplayComponent,
-    QuotesComponent
+    QuoteDisplayComponent
   ],
   imports: [
     BrowserModule,
