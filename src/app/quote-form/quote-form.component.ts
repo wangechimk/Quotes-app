@@ -29,7 +29,7 @@ export class QuoteFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  submitForm() {
+  addQuote() {
     console.log('formModel', this.formModel);
     this.newQuote.emit(this.formModel);
     this.formModel = new Quote('', '', '');
