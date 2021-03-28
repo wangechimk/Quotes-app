@@ -17,6 +17,15 @@ export class AppComponent {
       name: 'Jake Sully',
       quote: 'Sometimes your whole life boils down to one insane move.',
       author: 'James Cameron',
+    },
+    {
+      id: 2,
+      date: new Date('10-04-2010'),
+      upvotes: 0,
+      downvotes: 2,
+      name: 'paul',
+      quote: 'Of course I am not worried about intimidating men. The type of man who will be intimidated by me is exactly the type of man I have no interest in.',
+      author: 'Chimamanda Ngozi Adichie',
     }
   ];
 
