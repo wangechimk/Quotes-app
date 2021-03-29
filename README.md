@@ -1,13 +1,15 @@
 # QuotesApp
-#Author
-Wangechi Kimani
+[Wangechi Kimani](quotes04.netlify.app/
+)
 
-#Description
-This is angular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote.
+## Description
 
-#Live page
+This is agular cli application that displays quotes, allow the user to input new quote, upvote , downvote and delete the quote. 
+
+## Live Page 
 quotes04.netlify.app/
-This project was generated with [Angular CLI] version 9.1.15.
+ 
+
 
 ## Development server
 
@@ -33,18 +35,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#Technologies used
-HTML5
-SCSS
-markdown
-Bootstrap
+## Technologies Used
 
-#known Bugs
-Highlight directive does not work properly
+* [HTML5](https://github.com/topics/html5)
+* [SCSS](https://github.com/topics/scss)
+* [AngulerCLI]
+* markdown
+* [Bootstrap](https://github.com/topics/bootstrap)
 
-#contact Information
-For any contributions or inquiries please email me @wangechik.michelle@gmail.com
+## Known Bugs
+* highlight directive property does not work properly
 
-#License
-MIT License
-Copyright(c) 2021 Wangechi Kimani
+## Contact Information 
+
+If you have any question or contributions, please email me at [wangechik.michelle@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2021 **Wangechi Kimani**
