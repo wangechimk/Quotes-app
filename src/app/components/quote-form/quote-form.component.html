@@ -3,15 +3,18 @@
 <form>
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-    <input type="text" [(ngModel)]="formModel.name" class="form-control" name="name" placeholder="Your Name">
+    <input type="text" placeholder="Posted by..." class="form-control" [(ngModel)]="formModel.name" name="submitName" #submitName='ngModel' required>
+            <small class="text-danger text-center" [class.d-none]='submitName.valid || submitName.untouched'>Name is required</small>
   </div>
   <div class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label">Quote</label>
-    <textarea class="form-control" [(ngModel)]="formModel.quote" name="quote" rows="3"></textarea>
+    <input type="text" placeholder="Your quote here..." class="form-control" required [(ngModel)]="formModel.quote" id="text" name="text" #text='ngModel' required>
+    <small class="text-danger text-center" [class.d-none]='text.valid || text.untouched'>Quote is required</small>
   </div>
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Quote Author</label>
-    <input type="text" [(ngModel)]="formModel.author" class="form-control" name="author" placeholder="Quote Author">
+    <input type="text" placeholder="Quote by..." class="form-control" [(ngModel)]="formModel.author" name="author" #author='ngModel' required>
+            <small class="text-danger text-center" [class.d-none]='author.valid || author.untouched'>Author is required</small>
   </div>
   <button (click)="submitForm()" type="button" class="btn btn-success">Submit</button>
 </form>
